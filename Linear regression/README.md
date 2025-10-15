@@ -1,6 +1,6 @@
 #  House Price Prediction — Regression Model Report
 
-## 📘 Overview
+## Overview
 This project focuses on predicting **house prices (in lakhs)** using machine learning regression techniques.  
 The dataset contains both **numeric and categorical variables** such as number of rooms, square footage, and location.
 
@@ -42,7 +42,7 @@ This ensures **80%** of the data is used for model training and **20%** for test
 ### 3. **Target Transformation**
 
 Since house prices are strictly positive and vary across several orders of magnitude,  
-a log-transform was applied to stabilize variance and handle skewness.
+log-transform was applied to stabilize variance and handle skewness.
 
 ```python
 y_train_log = np.log1p(y_train)
@@ -176,7 +176,7 @@ Predictions are saved in **`submission_from_notebook.csv`**, suitable for evalua
 
 ---
 
-### 🧠 11. **Conclusion**
+### 11. **Conclusion**
 
 This project establishes a **baseline regression framework** for predicting house prices.  
 While the models achieved moderate accuracy (**R² ≈ 0.25**), the pipeline is **robust, reproducible, and easily extendable**.  
